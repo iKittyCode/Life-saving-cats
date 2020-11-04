@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="en"><head>
+
+    <style>
+        
+        body{
+        background-color:#e6cfbe
+      
+        }
+        #html{
+        font-family:  "Zapf-Chancery";
+        text-align: center;
+        font: size 29px
+         
+        }
+        #picture{
+        text-align:center
+        }
+        #start{
+        text-align:center;
+        }
+        #Schnautzie{
+            text-align:center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, sans-serif
+        }
+        #otherimage{
+        width: 480px;
+        height:480px;
+        }
+    </style>
+    <meta charset="utf-8">
+<title>Amazing stories about life saving cats</title>
+  </head>
+  <body>
+      <a href="#tommy" id="Start">Click here to got to tommy the cat's story</a>
+      <h1 id="html"><em>Shocking Cat Stories That will Change how you Think About Cats</em></h1>
+      <img src="https://media.timeout.com/images/105162787/630/472/image.jpg" width="600" height="400" id="picture">
+      <h2 id="tommy">Tommy the cat</h2>
+      <p> Police don't really sure how else to explain it, but when an officer walked 
+          into an apartment in January 2006 because of a 911 call, an orange tabby cat was lying by a phone on the living room floor. 
+          The cat's owner, Gary Rosheisen, was on the ground near his bed. Gary fell out of the weelchair which was next to him. Rosheisen said he 
+          couldn't get up because of pain from osteoporosis and ministrokes that disrupt his balance. 
+
+        Rosheisen said his cat, Tommy, must have hit the right buttons to call 911.</p>
+        <p>Officer Pattrick said after the cat saved the owner "I know it sounds weird but there is no other explanation"</p>
+        <h2 id="Schnautzie">Schnautzie the kitten protects couple from deadly gas leak</h2>
+        <p>Schnautzie was still just a kitten when she did something really big for her ownersAt about 2 a.m. on a cold night in October 2007, Schnautzie strolled up onto the chest of sleeping Trudy Guy and began tapping on Guy's nose with her paw. The first time it happened, Guy ignored the adorable annoyance and went back to sleep. But Schnautzie had persistent<br>tapping. This time Guy woke up and smelled gas and his cat hissing. There was a gas leak leading into there home and they quickly avacuited the home.</p>
+        <p>This is an image of Guy holding Schnautzie<img src="https://media4.s-nbcnews.com/j/streams/2014/May/140516/2D274905869138-100421-gas-sniffing-feline-8a.fit-1120w.jpg" id="otherimage"></p>
+<a href="https://www.boredpanda.com/hero-cats/?utm_source=google&utm_medium=organic&utm_campaign=organic"><button>Click here to learn more about cats who saved there owners</button></a>
+<p id="quote"></p>
+
+</body> 
+
+<script>
+const url = "sketch.json"
+var label = document.getElementById('quote')
+async function getData() {
+const response = await fetch(url)
+const data = await response.json()
+label.innerHTML = "fun fact " + data[Math.floor(Math.random() * data.length)]
+}
+getData()
+</script>
+</html>
